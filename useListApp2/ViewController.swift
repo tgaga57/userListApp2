@@ -10,9 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // ユーザーネームラベル
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    
+    // ユーザー趣味ラベル
+    @IBOutlet weak var userInfoLabel: UILabel!
+    
+    //    それぞれ代入するテキストの初期化
+    var listName : String = ""
+    var info : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        userNameLabel.text = listName
+        userInfoLabel.text = info
     }
 
 
